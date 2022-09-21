@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "793246799579",
+    "project_id": "myquizapp-f5c3b",
+    "storage_bucket": "myquizapp-f5c3b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:793246799579:android:cf3630b6d9feb6abfb1efe",
+        "android_client_info": {
+          "package_name": "com.crowquiz.quiz_app_futter3"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "793246799579-rss76doj839g7ss89didf9ef17dl216r.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAE24bQmrxZtpK0NqVVYhDhBVR39TMw6_M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "793246799579-rss76doj839g7ss89didf9ef17dl216r.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
