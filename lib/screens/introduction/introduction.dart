@@ -12,7 +12,7 @@ class AppIntroductionScreen extends StatelessWidget {
     return Scaffold(
       body: Container(
         decoration: BoxDecoration(
-          gradient: mainGradient(context),
+          gradient: mainGradient(),
         ),
         alignment: Alignment.center,
         child: Padding(
@@ -37,9 +37,7 @@ class AppIntroductionScreen extends StatelessWidget {
               ),
               SizedBox(height: 40.0),
               AppCircleButton(
-                onTap: () {
-                  return null;
-                },
+                onTap: () => Get.offAndToNamed("/home"),
                 child: Icon(
                   Icons.arrow_forward,
                   size: 35.0,

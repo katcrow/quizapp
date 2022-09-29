@@ -12,8 +12,14 @@ import 'package:quiz_app_futter3/screens/splash/splash_screen.dart';
 
 import 'controllers/theme_controller.dart';
 
-void main() {
+Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
+
+  //-- info : firebase 초기화
+  await Firebase.initializeApp(
+    options: DefaultFirebaseOptions.currentPlatform,
+  );
+
   InitialBindings().dependencies();
   runApp(MyApp());
 }
