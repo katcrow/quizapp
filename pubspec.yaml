@@ -20,6 +20,15 @@ dependencies:
   firebase_storage: ^10.3.8
   cached_network_image:
   flutter_zoom_drawer:
+  firebase_auth:
+  url_launcher:
+  google_sign_in:
+  logger: ^1.0.0
+  flutter_svg:
+  shimmer:
+  easy_separator:
+  webview_flutter: ^3.0.4
+  path_provider: ^2.0.7
 
 dev_dependencies:
   flutter_test:

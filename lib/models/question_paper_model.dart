@@ -69,8 +69,15 @@ class Questions {
   Questions.fromJson(Map<String, dynamic> json)
       : id = json['id'],
         question = json['question'],
-        answers = (json['answers'] as List).map((e) => Answers.fromJson(e)).toList(),
+        answers =
+            (json['answers'] as List).map((e) => Answers.fromJson(e)).toList(),
         correctAnswer = json['correct_answer'];
+
+  Questions.fromSnapshot(QueryDocumentSnapshot<Map<String, dynamic>> snapshot)
+      : id = snapshot.id,
+        question = snapshot["question"],
+        answers = [],
+        correctAnswer = snapshot["correct_answer"];
 
   Map<String, dynamic> toJson() {
     final Map<String, dynamic> data = new Map<String, dynamic>();
@@ -87,12 +94,17 @@ class Questions {
 class Answers {
   String? identifier;
   String? answer;
-
+  // constructor
   Answers({this.identifier, this.answer});
 
+  // named constructor or factory constructor
   Answers.fromJson(Map<String, dynamic> json)
       : identifier = json['identifier'],
         answer = json['Answer'];
+
+  Answers.fromSnapshot(QueryDocumentSnapshot<Map<String, dynamic>> snapshot)
+      : identifier = snapshot['identifier'] as String?,
+        answer = snapshot['Answer'] as String?;
 
   Map<String, dynamic> toJson() {
     final Map<String, dynamic> data = new Map<String, dynamic>();

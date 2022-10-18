@@ -14,6 +14,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "793246799579-po2qjvi6gi5885gvlcf7138imm96slnv.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.crowquiz.quiz_app_futter3",
+            "certificate_hash": "4497d34d6c16fc6cc526fd8f64e4cfc5f929cc79"
+          }
+        },
+        {
           "client_id": "793246799579-rss76doj839g7ss89didf9ef17dl216r.apps.googleusercontent.com",
           "client_type": 3
         }
@@ -29,6 +37,13 @@
             {
               "client_id": "793246799579-rss76doj839g7ss89didf9ef17dl216r.apps.googleusercontent.com",
               "client_type": 3
+            },
+            {
+              "client_id": "793246799579-1edi6cjacigjfr79vl6b8umjgkruottt.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.crowquiz.quizAppFutter3"
+              }
             }
           ]
         }

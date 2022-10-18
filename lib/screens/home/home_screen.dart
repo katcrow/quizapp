@@ -17,6 +17,8 @@ import 'menu_screen.dart';
 class HomeScreen extends GetView<MyZoomDrawerController> {
   const HomeScreen({Key? key}) : super(key: key);
 
+  static const String routeName = "/home";
+
   @override
   Widget build(BuildContext context) {
     QuestionPaperController _questionPaperController = Get.find();
@@ -24,14 +26,15 @@ class HomeScreen extends GetView<MyZoomDrawerController> {
     return Scaffold(
       body: GetBuilder<MyZoomDrawerController>(builder: (_) {
         return ZoomDrawer(
+          menuScreenWidth: MediaQuery.of(context).size.width,
           borderRadius: 50.0,
-          showShadow: true,
+          showShadow: false,
           moveMenuScreen: false,
           angle: 0.0,
           style: DrawerStyle.defaultStyle,
           menuBackgroundColor: Colors.transparent,
           menuScreenOverlayColor: Colors.transparent,
-          slideWidth: MediaQuery.of(context).size.width * 0.8,
+          slideWidth: MediaQuery.of(context).size.width * 0.7,
           controller: _.zoomDrawerController,
           menuScreen: MyMenuScreen(),
           mainScreen: Container(
@@ -51,7 +54,7 @@ class HomeScreen extends GetView<MyZoomDrawerController> {
                           child: Icon(AppIcons.menuLeft),
                         ),
 
-                        SizedBox(height: 10),
+                        SizedBox(height: 15),
                         Padding(
                           padding: const EdgeInsets.symmetric(vertical: 10),
                           child: Row(
@@ -59,8 +62,9 @@ class HomeScreen extends GetView<MyZoomDrawerController> {
                               Icon(
                                 AppIcons.peace,
                               ),
+                              SizedBox(width: 5),
                               Text(
-                                "Hello My Son",
+                                "내몸 알기 프로젝트",
                                 style: detailText.copyWith(
                                   color: onSurfaceTextColor,
                                 ),
@@ -69,7 +73,7 @@ class HomeScreen extends GetView<MyZoomDrawerController> {
                           ),
                         ),
                         Text(
-                          "What do you want?",
+                          "건강검진과 생활습관 설문기반 맞춤형 헬스케어",
                           style: headerText,
                         )
                       ],

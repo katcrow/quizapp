@@ -9,7 +9,6 @@ import 'package:quiz_app_futter3/firebase_options.dart';
 import 'package:quiz_app_futter3/routes/app_routes.dart';
 import 'package:quiz_app_futter3/screens/introduction/introduction.dart';
 import 'package:quiz_app_futter3/screens/splash/splash_screen.dart';
-
 import 'controllers/theme_controller.dart';
 
 Future<void> main() async {
@@ -30,7 +29,9 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GetMaterialApp(
-      theme: Get.find<ThemeController>().lightTheme,
+      debugShowCheckedModeBanner: false,
+      // theme: Get.find<ThemeController>().lightTheme,
+      theme: Get.find<ThemeController>().darkTheme,
       // theme: DarkTheme().buildDarkTheme(),
       getPages: AppRoutes.routes(),
     );
